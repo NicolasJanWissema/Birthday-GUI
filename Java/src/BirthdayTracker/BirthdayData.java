@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BirthdayManager {
+public class BirthdayData {
     private String[] months = new String[]{
             "January",
             "February",
@@ -21,7 +21,7 @@ public class BirthdayManager {
     private BirthdayNode birthdayNode = new BirthdayNode();
     private String filename;
 
-    public BirthdayManager(String filename){
+    public BirthdayData(String filename){
         this.filename = filename;
         try{
             BufferedReader bufferedReader = new BufferedReader(new FileReader(filename));
